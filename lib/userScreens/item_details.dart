@@ -85,7 +85,41 @@ class _ItemDetailState extends State<ItemDetail> {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: new BottomAppBar(
-
+      color: Theme.of(context).primaryColor,
+        elevation: 0.0,
+        shape: new CircularNotchedRectangle(),
+        notchMargin: 5.0,
+        child: new Container(
+          height: 50.0,
+          decoration: new BoxDecoration(color: Theme.of(context).primaryColor),
+          child: new Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              new Container(
+                width: (screenSize.width - 20)/2,
+                child: new Text(
+                  "ADD TO FAVOURITES",
+                  textAlign: TextAlign.center,
+                  style: new TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w700
+                  ),
+                ),
+              ),
+              new Container(
+                width: (screenSize.width -20)/2,
+                child: new Text(
+                  "ORDER NOW",
+                  textAlign: TextAlign.center,
+                  style: new TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+              )
+            ],
+          ),
+        ),
       ),
     );
   }
