@@ -57,6 +57,57 @@ class _ItemDetailState extends State<ItemDetail> {
           new SingleChildScrollView(
             child: new Column(
               children: <Widget>[
+                    new SizedBox(
+                      height: 50.0,
+                    ),
+                new Card(
+                  child: new Container(
+                    width: screenSize.width,
+                    margin: new EdgeInsets.only(left: 20.0, right: 20.0),
+                    child: new Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        new SizedBox(
+                          height: 10.0,
+                        ),
+                        new Text(
+                          widget.itemName,
+                          style: new TextStyle(fontSize: 10.0, fontWeight: FontWeight.w700),
+                        ),
+                        new SizedBox(
+                          height: 10.0,
+                        ),
+                        new Text(
+                          "Item Sub Name",
+                          style: new TextStyle(
+                            fontSize: 14.0,
+                            fontWeight: FontWeight.w700
+                          ),
+                        ),
+                          new SizedBox(
+                            height: 10.0,
+                          ),
+                        new Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: <Widget>[
+                            new Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: <Widget>[
+                                new Icon(Icons.star,
+                                color: Colors.blue,
+                                    size: 20.0,),
+                                new SizedBox(
+                                  height: 10.0,
+                                )
+                              ],
+                            )
+                          ],
+                        )
+
+                      ],
+                    ),
+                  ),
+                )
 
               ],
             ),
